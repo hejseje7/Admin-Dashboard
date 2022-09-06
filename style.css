@@ -60,8 +60,33 @@
 
 .header {
     display: grid;
-    grid-template: 1fr 1.5fr / 1.9fr 1fr;
+    grid-template: 1fr 1.5fr / 1.8fr 1fr;
     gap: 2.097vw;
-    padding: 1.04vw 3.14vw;
+    padding: 1.04vw 4.14vw 1.04vw 3vw;
+}
+.search-box, .header-exstra, .header-profile, .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-exstra {
+    justify-content: end;
+    gap: 2rem;
+    padding-right: 1vw;
+    font-size: 1.15rem;
+}
+.search-img, .bell-img {
+    height: 1.55rem;
+}
+input[type="search"] {
+    border: none;
+    background-color: #dfe7eb;
+    flex-grow: 1;
+    height: 1.9rem;
+    border-radius: 1vw;
+}
+.profile-img {
+    height: 2.9rem;
+    border-radius: 50%;
 }
 
